@@ -1,5 +1,6 @@
 //alert("JavaScript works!");
 
+
 // Type of drums
 var drumKit = ["Drums", "Crash Cybals", "Ride Cymbols", "Pedals", "Hi-Hats"]  
 
@@ -10,17 +11,24 @@ var noun = [ "Ludwig", "Zildjen", "Sabian", "DW", "Paiste" ]
 drumKit.unshift( "Sticks" );
 noun.unshift( "Vic Firth" );
 
+var doPlay = true;
 
+ 
+/*
+A person approaches me after a show and complements my drumming. I ask them if they play too.
+If they play, I will tell them about my set-up. If they do not then I won't bore them with the details.
+*/
 
-// My loop statement complete with concatenation
-for (var i = 0, d = drumKit.length; i < d; i++) {
+if( doPlay === true) {
+    for (var i = 0, d = drumKit.length; i < d; i++) {
     console.log( "My " + drumKit[i] + " are " + noun[i] + "." );
-};
+    }; else{console.log( "oh, right on.")}
 
-var songSections = [ "Intro", "1st Verse", "1st Pre-Chorus", "1st Chorus", "2nd Verse","2nd Pre- Chorus", "2nd Chorus", "Bridge", "Outro" ],
-       
-    numberOfBars = [ 8, 16, 4, 8, 12, 4, 8, 20, 8 ] ;  
+};    
+    
 
+
+/*
 var playOneSection = function() {
        var songSection = songSections[sectionNumber],
               barsThisSection = numberOfBars[sectionNumber]
@@ -37,7 +45,7 @@ for (var sectionNumber = 0; sectionNumber < songSections.length; sectionNumber++
 
 var say = function(message) { console.log(message);
 };
-//say(" I think I'm getting the hang of this!");
+
 
 
 // Converting Fahrenheit to Celsius and Vice Versa
@@ -64,4 +72,4 @@ say("1900 is a leap year: " + isLeapYear(1900));
 say("2008 is a leap year: " + isLeapYear(2008)); 
 say("2011 is a leap year: " + isLeapYear(2011)); 
 
-
+ */
